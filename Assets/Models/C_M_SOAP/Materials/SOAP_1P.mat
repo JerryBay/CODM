@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SOAP_1P
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _DYNAMIC_OPAQUE _NORMALMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BentNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 8a8fd51d32da8124a809bc1fe5e3e2ab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CutRimTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 750e86b50a0819543afe85fc6e13d3c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 750e86b50a0819543afe85fc6e13d3c6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TintMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask:
+        m_Texture: {fileID: 2800000, guid: 2ed7c15fbedf8d943bbb573b786df74b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ssslut:
+        m_Texture: {fileID: 2800000, guid: c3d0c54e0b6f49249b695f8aed3193b3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BlackBrightness: 0
+    - _BlackHue: 0
+    - _BlackSaturation: 0
+    - _BlueBrightness: 0
+    - _BlueHue: 0
+    - _BlueSaturation: 0
+    - _BumpMapScale: 1
+    - _BumpScale: 1
+    - _ColorBoostInLegacy: 1
+    - _CustomRenderQueue: -1
+    - _Cutoff: 0.5
+    - _DetailMode: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionIntensity: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GreenBrightness: 0
+    - _GreenHue: 0
+    - _GreenSaturation: 0
+    - _LegacyFixEyeVec: 1
+    - _Metallic: 0
+    - _Mode: -1
+    - _OcclusionStrength: 1
+    - _Parallax: 0
+    - _PickIntensity: 2
+    - _PickRange: 5
+    - _PickSpeed: 1
+    - _RedBrightness: 0
+    - _RedHue: 0
+    - _RedSaturation: 0
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SubMode: 0
+    - _TimeOffset: 0
+    - _TimeScale: 0
+    - _TranslucencyScale: 4
+    - _TranslucencyThreshold: 0.4
+    - _TranslucencyViewDependency: 0.7
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _aoStrengh: 1
+    - _cull: 2
+    - _diffuseOffset: 0.046
+    - _diffuseScale: 0.538
+    - _dlEmissionIntensity: 0
+    - _fakeAmbientIntensity: 0
+    - _skinSecondSpecPower: 13.4
+    - _skinSecondSpecScale: 6.7
+    - _smoothScale: 0.952
+    - _sssScale: 2.48
+    m_Colors:
+    - _4ColCoef0: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef1: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef2: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef3: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColColorSwitch: {r: 0, g: 0, b: 0, a: 0}
+    - _4ColDetail0: {r: 0.24999997, g: 0.24999997, b: 0.24999997, a: 0}
+    - _4ColDetail1: {r: 0.75, g: 0.75, b: 0.75, a: 0}
+    - _CamoufalgeColCoef0: {r: 0.25, g: 0.25, b: 0.25, a: 0.5}
+    - _CamoufalgeColCoef1: {r: -0.25, g: -0.25, b: -0.25, a: 0.5}
+    - _CamoufalgeColCoef2: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CustomIBLRotation: {r: 1, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor_1: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor_2: {r: 0, g: 0, b: 0, a: 1}
+    - _PaintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PickColor: {r: 0.7, g: 0.24999997, b: 0, a: 1}
+    - _TranslucencyColor: {r: 1, g: 0, b: 0, a: 1}
+    - _dlEmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _fakeAmbientColor: {r: 1, g: 1, b: 1, a: 1}
+    - _skinSpecTint: {r: 1, g: 1, b: 1, a: 1}
+    - custom_SHAb: {r: 0.03139954, g: 0.1631157, b: -0.04118569, a: 0.2899188}
+    - custom_SHAg: {r: 0.03854706, g: 0.10615853, b: -0.03742816, a: 0.30797204}
+    - custom_SHAr: {r: 0.041766346, g: 0.07063236, b: -0.033793144, a: 0.30759814}
+    - custom_SHBb: {r: 0.03891858, g: -0.036480136, b: -0.044130694, a: 0.08303404}
+    - custom_SHBg: {r: 0.025588917, g: -0.04599713, b: -0.025818033, a: 0.099797376}
+    - custom_SHBr: {r: 0.018580439, g: -0.049752556, b: -0.014838078, a: 0.10371487}
+    - custom_SHC: {r: -0.023058973, g: -0.03199385, b: -0.045035128, a: 1}

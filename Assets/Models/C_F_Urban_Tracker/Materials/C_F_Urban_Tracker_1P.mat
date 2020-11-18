@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: C_F_Urban_Tracker_1P
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _DYNAMIC_OPAQUE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BentNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMapPakced:
+        m_Texture: {fileID: 2800000, guid: 4b48ca0474421494587e4a66a761059f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CutRimTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a617e5e1af279d948bf17de99b3c0496, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicRoughnessMap:
+        m_Texture: {fileID: 2800000, guid: 0ce9507b6098ea64fa2d6b4c1554955a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - custom_IBLCubemap:
+        m_Texture: {fileID: 8900000, guid: da8b4cfbefbb3c14fac4955bb5082054, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpMapScale: 1
+    - _BumpScale: 1
+    - _ColorBoostInLegacy: 1
+    - _CustomRenderQueue: -1
+    - _Cutoff: 0.5
+    - _DetailMode: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _EmissionIntensity: 1
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _LegacyFixEyeVec: 1
+    - _Metallic: 0
+    - _Mode: -1
+    - _OcclusionStrength: 1
+    - _Parallax: 0
+    - _PickIntensity: 2
+    - _PickRange: 5
+    - _PickSpeed: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SubMode: 0
+    - _TimeOffset: 0
+    - _TimeScale: 0
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _cull: 2
+    - _dlEmissionIntensity: 0
+    m_Colors:
+    - _4ColCoef0: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef1: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef2: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef3: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColColorSwitch: {r: 0, g: 0, b: 0, a: 0}
+    - _4ColDetail0: {r: 0.24999997, g: 0.24999997, b: 0.24999997, a: 0}
+    - _4ColDetail1: {r: 0.75, g: 0.75, b: 0.75, a: 0}
+    - _CamoufalgeColCoef0: {r: 0.25, g: 0.25, b: 0.25, a: 0.5}
+    - _CamoufalgeColCoef1: {r: -0.25, g: -0.25, b: -0.25, a: 0.5}
+    - _CamoufalgeColCoef2: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CustomIBLRotation: {r: 1, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor_1: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor_2: {r: 0, g: 0, b: 0, a: 1}
+    - _PaintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PickColor: {r: 0.7, g: 0.24999997, b: 0, a: 1}
+    - _dlEmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - custom_SHAb: {r: -0.12847373, g: 0.40817857, b: -0.2962972, a: 0.4837456}
+    - custom_SHAg: {r: -0.112791866, g: 0.3230964, b: -0.2678513, a: 0.4859252}
+    - custom_SHAr: {r: -0.08766887, g: 0.27046618, b: -0.23934619, a: 0.4781558}
+    - custom_SHBb: {r: -0.12894133, g: -0.3071351, b: 0.007472735, a: 0.2972513}
+    - custom_SHBg: {r: -0.13318111, g: -0.28433695, b: 0.029250193, a: 0.3174501}
+    - custom_SHBr: {r: -0.122427054, g: -0.26299363, b: 0.034740552, a: 0.30965123}
+    - custom_SHC: {r: -0.0337071, g: -0.04935205, b: -0.0720833, a: 1}

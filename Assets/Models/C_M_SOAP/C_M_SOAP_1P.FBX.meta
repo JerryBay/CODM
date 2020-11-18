@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: 4d9763a99f232d944abc0c740546b365
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: b_Hips
+    100002: b_LeftArm
+    100004: b_LeftClav
+    100006: b_LeftForeArm
+    100008: b_LeftForeArmRoll
+    100010: b_LeftHand
+    100012: b_LeftIndex1
+    100014: b_LeftIndex2
+    100016: b_LeftIndex3
+    100018: b_LeftMiddle1
+    100020: b_LeftMiddle2
+    100022: b_LeftMiddle3
+    100024: b_LeftPinky1
+    100026: b_LeftPinky2
+    100028: b_LeftPinky3
+    100030: b_LeftRing1
+    100032: b_LeftRing2
+    100034: b_LeftRing3
+    100036: b_LeftThumb1
+    100038: b_LeftThumb2
+    100040: b_LeftThumb3
+    100042: b_Neck
+    100044: b_RightArm
+    100046: b_RightClav
+    100048: b_RightForeArm
+    100050: b_RightForeArmRoll
+    100052: b_RightHand
+    100054: b_RightIndex1
+    100056: b_RightIndex2
+    100058: b_RightIndex3
+    100060: b_RightMiddle1
+    100062: b_RightMiddle2
+    100064: b_RightMiddle3
+    100066: b_RightPinky1
+    100068: b_RightPinky2
+    100070: b_RightPinky3
+    100072: b_RightRing1
+    100074: b_RightRing2
+    100076: b_RightRing3
+    100078: b_RightThumb1
+    100080: b_RightThumb2
+    100082: b_RightThumb3
+    100084: b_Spine
+    100086: Bip01
+    100088: //RootNode
+    100090: soap_1p
+    400000: b_Hips
+    400002: b_LeftArm
+    400004: b_LeftClav
+    400006: b_LeftForeArm
+    400008: b_LeftForeArmRoll
+    400010: b_LeftHand
+    400012: b_LeftIndex1
+    400014: b_LeftIndex2
+    400016: b_LeftIndex3
+    400018: b_LeftMiddle1
+    400020: b_LeftMiddle2
+    400022: b_LeftMiddle3
+    400024: b_LeftPinky1
+    400026: b_LeftPinky2
+    400028: b_LeftPinky3
+    400030: b_LeftRing1
+    400032: b_LeftRing2
+    400034: b_LeftRing3
+    400036: b_LeftThumb1
+    400038: b_LeftThumb2
+    400040: b_LeftThumb3
+    400042: b_Neck
+    400044: b_RightArm
+    400046: b_RightClav
+    400048: b_RightForeArm
+    400050: b_RightForeArmRoll
+    400052: b_RightHand
+    400054: b_RightIndex1
+    400056: b_RightIndex2
+    400058: b_RightIndex3
+    400060: b_RightMiddle1
+    400062: b_RightMiddle2
+    400064: b_RightMiddle3
+    400066: b_RightPinky1
+    400068: b_RightPinky2
+    400070: b_RightPinky3
+    400072: b_RightRing1
+    400074: b_RightRing2
+    400076: b_RightRing3
+    400078: b_RightThumb1
+    400080: b_RightThumb2
+    400082: b_RightThumb3
+    400084: b_Spine
+    400086: Bip01
+    400088: //RootNode
+    400090: soap_1p
+    4300000: soap_1p
+    9500000: //RootNode
+    13700000: soap_1p
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+    usePackedNormalsAndTangents: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 2
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  meshChannelCullingMask: 0
+  userData: 
+  assetBundleName: cod_models$avatar$c_m_soap.pak
+  assetBundleVariant: 

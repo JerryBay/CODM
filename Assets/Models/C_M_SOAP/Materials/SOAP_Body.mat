@@ -1,0 +1,253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2377186563409660560
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da692e001514ec24dbc4cca1949ff7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SOAP_Body
+  m_Shader: {fileID: -6465566751694194690, guid: 804213b6a5f45074c983ce62dd45a7fb,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap:
+    MotionVector: User
+  disabledShaderPasses:
+  - TransparentBackface
+  - MOTIONVECTORS
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_250911A5:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_355E8A4E:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_36645CC3:
+        m_Texture: {fileID: 2800000, guid: 74fe23388f598b54c9fb729c3d89529b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_3665C790:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_88A9CC78:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_944A8CEA:
+        m_Texture: {fileID: 2800000, guid: 8a8fd51d32da8124a809bc1fe5e3e2ab, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C372CA79:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_EDFFB791:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BentNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMapPakced:
+        m_Texture: {fileID: 2800000, guid: b953fd92cd0a8694697cf5833cad99ba, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CutRimTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HeightMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 74fe23388f598b54c9fb729c3d89529b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicRoughnessMap:
+        m_Texture: {fileID: 2800000, guid: d29ffebea599d5646b2b84a3c4db707a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - custom_IBLCubemap:
+        m_Texture: {fileID: 8900000, guid: 200dcaf8848903c4bb76a1fa8d218d0f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1F3F727: 1
+    - Vector1_4594755B: 1
+    - Vector1_5C35C3A3: 0
+    - Vector1_8ECA1AAB: 0
+    - Vector1_A4DD253D: 1
+    - Vector1_A5B41E93: 1
+    - Vector1_CB2241EB: 1
+    - Vector1_DB1E606E: 0.5
+    - Vector1_E08D9B42: 0
+    - Vector1_E3050DFD: 0.15
+    - Vector1_EE39CFC0: 1
+    - Vector1_EE3F7786: 1
+    - Vector1_EFCC394B: 1
+    - Vector1_F0016C4E: 0
+    - Vector1_F70C3F93: 0.3
+    - _AlphaCutoffEnable: 0
+    - _AlphaDstBlend: 0
+    - _AlphaSrcBlend: 1
+    - _BlendMode: 0
+    - _BumpMapScale: 1
+    - _BumpScale: 1.3
+    - _ColorBoostInLegacy: 1
+    - _CullMode: 2
+    - _CullModeForward: 2
+    - _CustomRenderQueue: -1
+    - _Cutoff: 0.5
+    - _DetailMaskFactor: 0
+    - _DetailMode: 0
+    - _DetailNormalMapScale: 1
+    - _DetailParamControl: 0
+    - _DetialBlendMode: 0
+    - _DiffusionProfileHash: 2.7317202
+    - _DoubleSidedEnable: 0
+    - _DoubleSidedNormalMode: 2
+    - _DstBlend: 0
+    - _EmissionIntensity: 1
+    - _EnableFogOnTransparent: 1
+    - _FakeDirLightFactor: 0
+    - _FixedModelEnvMap: 0
+    - _GlossMapScale: 1
+    - _Glossiness: 0.389
+    - _GlossyReflections: 0
+    - _IndirectSpecIntensity: 1
+    - _LegacyFixEyeVec: 1
+    - _Metallic: 0
+    - _Mode: -1
+    - _OcclusionStrength: 0.471
+    - _Parallax: 0
+    - _PickIntensity: 2
+    - _PickRange: 5
+    - _PickSpeed: 1
+    - _ReceivesSSR: 1
+    - _RequireSplitLighting: 1
+    - _RimIntensity: 8
+    - _RimLevel: 1
+    - _RimRange: 3
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 0
+    - _SrcBlend: 1
+    - _Stencil: 3
+    - _StencilRef: 4
+    - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
+    - _StencilRefGBuffer: 14
+    - _StencilRefMV: 40
+    - _StencilWriteMask: 6
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskDistortionVec: 4
+    - _StencilWriteMaskGBuffer: 14
+    - _StencilWriteMaskMV: 40
+    - _SubMode: 8
+    - _SurfaceType: 0
+    - _TimeOffset: 0
+    - _TimeScale: 0
+    - _TransparentBackfaceEnable: 0
+    - _TransparentCullMode: 2
+    - _TransparentSortPriority: 0
+    - _TransparentZWrite: 0
+    - _UVSec: 0
+    - _UseShadowThreshold: 0
+    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestGBuffer: 4
+    - _ZTestTransparent: 4
+    - _ZWrite: 1
+    - _cull: 2
+    - _dlEmissionIntensity: 0
+    m_Colors:
+    - Vector4_252EC246: {r: 25, g: 25, b: 0, a: 0}
+    - Vector4_4046014A: {r: 25, g: 25, b: 0, a: 0}
+    - _4ColCoef0: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef1: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef2: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColCoef3: {r: 0, g: 1, b: 0, a: 0}
+    - _4ColColorSwitch: {r: 0, g: 0, b: 0, a: 0}
+    - _4ColDetail0: {r: 0.24999997, g: 0.24999997, b: 0.24999997, a: 0}
+    - _4ColDetail1: {r: 0.75, g: 0.75, b: 0.75, a: 0}
+    - _CamoufalgeColCoef0: {r: 0.25, g: 0.25, b: 0.25, a: 0.5}
+    - _CamoufalgeColCoef1: {r: -0.25, g: -0.25, b: -0.25, a: 0.5}
+    - _CamoufalgeColCoef2: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _CustomIBLRotation: {r: 1, g: 0, b: 0, a: 1}
+    - _DiffusionProfileAsset: {r: -1.405437e+32, g: 2.0030989e-26, b: 0.00000006313206,
+        a: -4.4045647e-18}
+    - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor_1: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor_2: {r: 0, g: 0, b: 0, a: 1}
+    - _PaintColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PickColor: {r: 0.7, g: 0.24999997, b: 0, a: 1}
+    - _RimColor: {r: 0.56999993, g: 0.17999998, b: 0.059999965, a: 1}
+    - _dlEmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - custom_SHAb: {r: 0.0006208224, g: 0.08712424, b: -0.022120625, a: 0.33793345}
+    - custom_SHAg: {r: 0.000696148, g: 0.08712998, b: -0.022083797, a: 0.3376507}
+    - custom_SHAr: {r: 0.00063159596, g: 0.08713646, b: -0.022134922, a: 0.33793488}
+    - custom_SHBb: {r: -0.0018038378, g: 0.010082282, b: 0.073500425, a: -0.012454616}
+    - custom_SHBg: {r: -0.0015597515, g: 0.010257706, b: 0.073507704, a: -0.012494531}
+    - custom_SHBr: {r: -0.0017985787, g: 0.010076083, b: 0.073498994, a: -0.012471579}
+    - custom_SHC: {r: 0.012726352, g: 0.01274528, b: 0.012726188, a: 1}
