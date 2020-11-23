@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
     <Compile Include="Assets\Scripts\AdaptEye.cs" />
     <Compile Include="Assets\Scripts\CameraSwitcher.cs" />
     <Compile Include="Assets\Scripts\CharacterAssets.cs" />
@@ -81,7 +82,13 @@
     <None Include="Assets\Files\Female\lockDate.txt" />
     <None Include="Assets\Eyes\C_F_urban_Tracker\idx_xueer2head.txt" />
     <None Include="Assets\Files\Female\nanjie\nanjie_slim_mirror_F.txt" />
+    <None Include="Assets\Files\Female\codm4\codm4.txt" />
+    <None Include="Assets\Files\Female\codm2\codm2.txt" />
     <None Include="Assets\Eyes\C_F_urban_Tracker\idx_UE4Head2Xueer.txt" />
+    <None Include="Assets\Files\Female\codm3\codm3.txt" />
+    <None Include="Assets\Files\Female\codm5\codm5.txt" />
+    <None Include="Assets\Files\Female\codm1\codm1.txt" />
+    <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
     <None Include="Assets\Eyes\C_F_urban_Tracker\eyelash\idx_eyelash_right.txt" />
     <None Include="Assets\Files\Female\yoyo\yoyo_slim_mirror_F.txt" />
     <None Include="Assets\Eyes\C_F_urban_Tracker\eyelash\idx_eyelash_left.txt" />

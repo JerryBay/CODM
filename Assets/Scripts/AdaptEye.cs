@@ -18,21 +18,20 @@ public class AdaptEye : MonoBehaviour
 
 
 
-    public void Adapt(TextAsset personalFile,ref List<Vector3> vertices)
+    public void Adapt(ref string[] x,ref string[] y,ref string[] z, ref List<Vector3> vertices)
     {
-        HeadImport(personalFile);
+        HeadImport(ref x,ref y,ref z);
         CalculateEyeball(ref vertices);
         CalculateEyeLash(ref vertices);
     }
 
 
-    private void HeadImport(TextAsset personalFile)
+    private void HeadImport(ref string[] x,ref string[] y,ref string[] z)
     {
         List<float> head = new List<float>();
-        string[] headString = personalFile.text.Split('\n');
-        string[] headX = headString[0].Split(',');
-        string[] headY = headString[1].Split(',');
-        string[] headZ = headString[2].Split(',');
+        string[] headX = x;
+        string[] headY = y;
+        string[] headZ = z;
         for (int i = 0; i < _headVerticesNum; i++)
         {
             head.Add(float.Parse(headX[i]));

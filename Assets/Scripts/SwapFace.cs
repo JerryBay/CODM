@@ -43,14 +43,33 @@ public class SwapFace : MonoBehaviour
     {
         string[] indexs= _indexFile.text.Split('\n');
         string[] bodyIndex = indexs[0].Split(',');
-        string[] headIndex = indexs[1].Split(',');
+        string[] personalIndex = indexs[1].Split(',');
 
         int count = bodyIndex.Length;
 
         string[] datas = pictComb._personalFile.text.Split('\n');
-        string[] x = datas[0].Split(',');
-        string[] y = datas[1].Split(',');
-        string[] z = datas[2].Split(',');
+
+        string[] x;
+        string[] y;
+        string[] z;
+        switch (pictComb._flag)
+        {
+            case 0:
+                x = datas[0].Split(',');
+                y = datas[1].Split(',');
+                z = datas[2].Split(',');
+                break;
+            case 1:
+                x = datas[0].Split(' ');
+                y = datas[1].Split(' ');
+                z = datas[2].Split(' ');
+                break;
+            default:
+                x = datas[0].Split(',');
+                y = datas[1].Split(',');
+                z = datas[2].Split(',');
+                break;
+        }
 
         //string[] lockDatas = _lockFile.text.Split(',');
 
@@ -60,12 +79,16 @@ public class SwapFace : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             int body = int.Parse(bodyIndex[i]);
-            int head = int.Parse(headIndex[i]);
-            Vector3 vertex = new Vector3(float.Parse(x[head]), float.Parse(y[head]), float.Parse(z[head]));
+            int personal = int.Parse(personalIndex[i]);
+            //if (x[personal].Contains(" ")|| y[personal].Contains(" ") || z[personal].Contains(" "))
+            //{
+            //    Debug.Log("kongge");
+            //}
+            Vector3 vertex = new Vector3(float.Parse(x[personal]), float.Parse(y[personal]), float.Parse(z[personal]));
             vertex = OffsetAndScale.Correct(vertex);
             vertices[body] = vertex;
         }
-        _adaptEye.Adapt(pictComb._personalFile, ref vertices);
+        _adaptEye.Adapt(ref x,ref y,ref z, ref vertices);
         _mesh.vertices = vertices.ToArray();
         _mesh.RecalculateNormals();
 

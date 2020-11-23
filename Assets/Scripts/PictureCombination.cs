@@ -7,4 +7,6 @@ public class PictureCombination :MonoBehaviour
     public Material _material;
 
     public TextAsset _personalFile;
+
+    public int _flag;
 }

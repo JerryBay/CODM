@@ -6,7 +6,7 @@ public class OffsetAndScale : MonoBehaviour
     {
         Vector3 newVertex = new Vector3(vertex.x, vertex.z, vertex.y);
         newVertex /= 100;
-        float angle = Mathf.PI / 2;
+        float angle = Mathf.PI / 2*(90.00001f/90f);
         Matrix3x3 mtr = new Matrix3x3(new Vector3(1, 0, 0), new Vector3(0, Mathf.Cos(angle), -Mathf.Sin(angle)), new Vector3(0, Mathf.Sin(angle), Mathf.Cos(angle)));
 
         newVertex = mtr * newVertex;
