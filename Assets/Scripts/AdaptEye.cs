@@ -103,7 +103,7 @@ public class AdaptEye : MonoBehaviour
         }
         for (int i = 0; i < _eyelash.Length; i++)
         {
-            vertices[4033 + i] = OffsetAndScale.Correct(_eyelash[i]);
+            vertices[4033 + i] = OffsetAndScale.Correct( _eyelash[i]);
         }
     }
 }

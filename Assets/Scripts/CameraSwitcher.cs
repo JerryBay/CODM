@@ -8,6 +8,8 @@ public class CameraSwitcher : MonoBehaviour
     {
         public Vector3 _position;
 
+        public Vector3 _rotation;
+
         public int _fieldOfView;
     }
 
@@ -28,6 +30,7 @@ public class CameraSwitcher : MonoBehaviour
     {
         CameraSetting setting = _cameraSettings[index];
         transform.position = setting._position;
+        transform.eulerAngles = setting._rotation;
         GetComponent<Camera>().fieldOfView = setting._fieldOfView;
     }
 }

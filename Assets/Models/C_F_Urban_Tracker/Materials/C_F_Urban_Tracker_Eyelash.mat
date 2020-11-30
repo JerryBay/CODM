@@ -23,14 +23,15 @@ Material:
   m_Name: C_F_Urban_Tracker_Eyelash
   m_Shader: {fileID: -6465566751694194690, guid: 8fce9e3fff8ffe94baa7409dcd1a221d,
     type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _DISABLE_SSR _DOUBLESIDED_ON
+  m_ShaderKeywords: _ALPHATEST_ON _BLENDMODE_ALPHA _DISABLE_SSR _DOUBLESIDED_ON _ENABLE_FOG_ON_TRANSPARENT
+    _SURFACE_TYPE_TRANSPARENT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 2450
+  m_CustomRenderQueue: 3000
   stringTagMap:
     MotionVector: User
-    RenderType: TransparentCutout
+    RenderType: Transparent
   disabledShaderPasses:
   - TransparentBackface
   - MOTIONVECTORS
@@ -146,7 +147,7 @@ Material:
     - Vector1_AB8257D1: 1
     - Vector1_BB81CAD1: 0.2
     - Vector1_CB2241EB: 1
-    - Vector1_D16DBCEB: 0.095
+    - Vector1_D16DBCEB: 0.141
     - Vector1_DB1E606E: 0.5
     - Vector1_DBA3A12F: -0.1
     - Vector1_DD882285: 0.2
@@ -159,7 +160,7 @@ Material:
     - Vector1_F0016C4E: 0
     - Vector1_F70C3F93: 0.3
     - _AlphaCutoffEnable: 1
-    - _AlphaDstBlend: 0
+    - _AlphaDstBlend: 10
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
     - _BumpFactor: 1
@@ -173,7 +174,7 @@ Material:
     - _DiffusionProfileHash: 0
     - _DoubleSidedEnable: 1
     - _DoubleSidedNormalMode: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _EnableFogOnTransparent: 1
     - _GlossMapScale: 1
     - _Glossiness: 0
@@ -208,7 +209,7 @@ Material:
     - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 14
     - _StencilWriteMaskMV: 40
-    - _SurfaceType: 0
+    - _SurfaceType: 1
     - _TranslucencyIntensity: 4
     - _TranslucencySpead: 0
     - _TransparentBackfaceEnable: 0
@@ -217,10 +218,10 @@ Material:
     - _TransparentZWrite: 0
     - _UVSec: 0
     - _UseShadowThreshold: 1
-    - _ZTestDepthEqualForOpaque: 3
+    - _ZTestDepthEqualForOpaque: 4
     - _ZTestGBuffer: 3
     - _ZTestTransparent: 4
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
     - Color_1C5A1173: {r: 1, g: 1, b: 1, a: 1}
     - Color_52EF55BA: {r: 1, g: 1, b: 1, a: 0}

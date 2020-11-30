@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SwapFace : MonoBehaviour
@@ -8,7 +9,7 @@ public class SwapFace : MonoBehaviour
     public AdaptEye _adaptEye;
 
     private Mesh _mesh;
-    private Material _material;
+    public Material _material;
     private List<Vector3> _vertices=new List<Vector3>();
     public TextAsset _indexFile;
     public TextAsset _lockFile;
@@ -35,7 +36,6 @@ public class SwapFace : MonoBehaviour
         _mesh.GetVertices(_vertices);
         List<Material> materials = new List<Material>();
         _face.GetComponent<SkinnedMeshRenderer>().GetMaterials(materials);
-        _material = materials[0];
     }
 
 
@@ -71,7 +71,8 @@ public class SwapFace : MonoBehaviour
                 break;
         }
 
-        //string[] lockDatas = _lockFile.text.Split(',');
+        string[] lockDatas = _lockFile.text.Split('\n');
+
 
         // RecalculateVertices
         List<Vector3> vertices = new List<Vector3>();
@@ -79,11 +80,11 @@ public class SwapFace : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             int body = int.Parse(bodyIndex[i]);
-            int personal = int.Parse(personalIndex[i]);
-            //if (x[personal].Contains(" ")|| y[personal].Contains(" ") || z[personal].Contains(" "))
-            //{
-            //    Debug.Log("kongge");
-            //}
+            if (lockDatas.Contains((body-146).ToString()))
+            {
+                continue;
+            }
+            int personal = int.Parse(personalIndex[i]);           
             Vector3 vertex = new Vector3(float.Parse(x[personal]), float.Parse(y[personal]), float.Parse(z[personal]));
             vertex = OffsetAndScale.Correct(vertex);
             vertices[body] = vertex;
@@ -103,7 +104,7 @@ public class SwapFace : MonoBehaviour
         }
         else
         {
-            _face.GetComponent<SkinnedMeshRenderer>().materials[0]=_material;
+            _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
         }
     }
 
@@ -112,6 +113,6 @@ public class SwapFace : MonoBehaviour
         _mesh.SetVertices(_vertices);
         _mesh.RecalculateNormals();
 
-        _face.GetComponent<SkinnedMeshRenderer>().materials[0]=_material;
+        _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
     }
 }
