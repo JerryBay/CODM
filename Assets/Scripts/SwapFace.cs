@@ -9,7 +9,8 @@ public class SwapFace : MonoBehaviour
     public AdaptEye _adaptEye;
 
     private Mesh _mesh;
-    public Material _material;
+    //public Material _material;
+    public Texture _texture;
     private List<Vector3> _vertices=new List<Vector3>();
     public TextAsset _indexFile;
     public TextAsset _lockFile;
@@ -98,13 +99,21 @@ public class SwapFace : MonoBehaviour
 
     private void SwapTexture(PictureCombination pictComb)
     {
-        if (pictComb._material!=null)
+        //if (pictComb._material!=null)
+        //{
+        //    _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(pictComb._material) ;
+        //}
+        //else
+        //{
+        //    _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
+        //}
+        if (pictComb._texture != null)
         {
-            _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(pictComb._material) ;
+            _face.GetComponent<SkinnedMeshRenderer>().materials[0].SetTexture("Texture2D_36645CC3", pictComb._texture);
         }
         else
         {
-            _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
+            _face.GetComponent<SkinnedMeshRenderer>().materials[0].SetTexture("Texture2D_36645CC3",_texture);
         }
     }
 
@@ -113,6 +122,7 @@ public class SwapFace : MonoBehaviour
         _mesh.SetVertices(_vertices);
         _mesh.RecalculateNormals();
 
-        _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
+        //_face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
+        _face.GetComponent<SkinnedMeshRenderer>().materials[0].SetTexture("Texture2D_36645CC3", _texture);
     }
 }
