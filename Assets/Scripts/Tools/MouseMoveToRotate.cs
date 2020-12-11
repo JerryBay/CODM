@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 
-[ExecuteInEditMode]
+
 public class MouseMoveToRotate : MonoBehaviour
 {
     public CharacterManager _characterManager;
@@ -9,8 +9,11 @@ public class MouseMoveToRotate : MonoBehaviour
     [Range(0, 20)]
     public int _rotateSpeed = 20;
         
-    private float _preMousePosX;
-    private float _nowMousePosX;
+    private Vector2 _preMousePos;
+    private Vector2 _nowMousePos;
+
+    private const int _orientationControlButton= 1;
+    private const int _pedestalControlButton = 2;
 
     private void Start()
     {
@@ -18,7 +21,6 @@ public class MouseMoveToRotate : MonoBehaviour
         _characterManager.AddSubscriber(
             (instance)=>ChangeCharacter(_characterManager._currentCharacter)
             );
-        _preMousePosX = Input.mousePosition.x;
     }
 
     public void ChangeCharacter(GameObject cha)
@@ -28,15 +30,20 @@ public class MouseMoveToRotate : MonoBehaviour
 
     private void LateUpdate()
     {
-        _nowMousePosX = Input.mousePosition.x;
+        Vector2 mouseDelta;
 
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(_orientationControlButton))
         {
-            float deltaX = (_nowMousePosX - _preMousePosX);
-            _target.Rotate(0, -deltaX * _rotateSpeed * Time.deltaTime, 0);
+            _preMousePos = Input.mousePosition;
+        }
+        _nowMousePos = Input.mousePosition;
+        if (Input.GetMouseButton(_orientationControlButton))
+        {
+            mouseDelta = _nowMousePos - _preMousePos;
+            _target.Rotate(0, -mouseDelta.x * _rotateSpeed * Time.deltaTime, 0);
         }
 
-        _preMousePosX = _nowMousePosX;
+        _preMousePos = _nowMousePos;
     }
 }
 
