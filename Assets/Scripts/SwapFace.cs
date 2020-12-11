@@ -50,25 +50,25 @@ public class SwapFace : MonoBehaviour
 
         string[] datas = pictComb._personalFile.text.Split('\n');
 
-        string[] x;
-        string[] y;
-        string[] z;
+        string[] headX;
+        string[] headY;
+        string[] headZ;
         switch (pictComb._flag)
         {
             case 0:
-                x = datas[0].Split(',');
-                y = datas[1].Split(',');
-                z = datas[2].Split(',');
+                headX = datas[0].Split(',');
+                headY = datas[1].Split(',');
+                headZ = datas[2].Split(',');
                 break;
             case 1:
-                x = datas[0].Split(' ');
-                y = datas[1].Split(' ');
-                z = datas[2].Split(' ');
+                headX = datas[0].Split(' ');
+                headY = datas[1].Split(' ');
+                headZ = datas[2].Split(' ');
                 break;
             default:
-                x = datas[0].Split(',');
-                y = datas[1].Split(',');
-                z = datas[2].Split(',');
+                headX = datas[0].Split(',');
+                headY = datas[1].Split(',');
+                headZ = datas[2].Split(',');
                 break;
         }
 
@@ -81,16 +81,15 @@ public class SwapFace : MonoBehaviour
         for (int i = 0; i < count; i++)
         {
             int body = int.Parse(bodyIndex[i]);
-            if (lockDatas.Contains((body-146).ToString()))
+            if (lockDatas.Contains((body - 146).ToString()))
             {
                 continue;
             }
             int personal = int.Parse(personalIndex[i]);           
-            Vector3 vertex = new Vector3(float.Parse(x[personal]), float.Parse(y[personal]), float.Parse(z[personal]));
-            vertex = OffsetAndScale.Correct(vertex);
+            Vector3 vertex = new Vector3(float.Parse(headX[personal]), float.Parse(headY[personal]), float.Parse(headZ[personal]));
             vertices[body] = vertex;
         }
-        _adaptEye.Adapt(ref x,ref y,ref z, ref vertices);
+        _adaptEye.Adapt(ref headX, ref headY, ref headZ, ref vertices);
         _mesh.vertices = vertices.ToArray();
         _mesh.RecalculateNormals();
 
@@ -99,14 +98,6 @@ public class SwapFace : MonoBehaviour
 
     private void SwapTexture(PictureCombination pictComb)
     {
-        //if (pictComb._material!=null)
-        //{
-        //    _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(pictComb._material) ;
-        //}
-        //else
-        //{
-        //    _face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
-        //}
         if (pictComb._texture != null)
         {
             _face.GetComponent<SkinnedMeshRenderer>().materials[0].SetTexture("Texture2D_36645CC3", pictComb._texture);
@@ -122,7 +113,6 @@ public class SwapFace : MonoBehaviour
         _mesh.SetVertices(_vertices);
         _mesh.RecalculateNormals();
 
-        //_face.GetComponent<SkinnedMeshRenderer>().materials[0].CopyPropertiesFromMaterial(_material);
         _face.GetComponent<SkinnedMeshRenderer>().materials[0].SetTexture("Texture2D_36645CC3", _texture);
     }
 }

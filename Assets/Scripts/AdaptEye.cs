@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class AdaptEye : MonoBehaviour
 {
@@ -18,20 +19,18 @@ public class AdaptEye : MonoBehaviour
 
 
 
-    public void Adapt(ref string[] x,ref string[] y,ref string[] z, ref List<Vector3> vertices)
+    public void Adapt(ref string[] headX, ref string[] headY, ref string[] headZ, ref List<Vector3> vertices)
     {
-        HeadImport(ref x,ref y,ref z);
+        OffsetAndScale.AdaptEye(ref headX, ref headY, ref headZ);
+        HeadImport(ref headX, ref headY, ref headZ);
         CalculateEyeball(ref vertices);
         CalculateEyeLash(ref vertices);
     }
 
 
-    private void HeadImport(ref string[] x,ref string[] y,ref string[] z)
+    private void HeadImport(ref string[] headX, ref string[] headY, ref string[] headZ)
     {
         List<float> head = new List<float>();
-        string[] headX = x;
-        string[] headY = y;
-        string[] headZ = z;
         for (int i = 0; i < _headVerticesNum; i++)
         {
             head.Add(float.Parse(headX[i]));
@@ -45,6 +44,10 @@ public class AdaptEye : MonoBehaviour
             head.Add(float.Parse(headZ[i]));
         }
         _head = head.ToArray();
+        //for (int i = 0; i < _headVerticesNum*3; i++)
+        //{
+        //    File.AppendAllText($@"E:\Resources\head.txt", _head[i].ToString() + ",");
+        //}
     }
 
     private void CalculateEyeball(ref List<Vector3> vertices)

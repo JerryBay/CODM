@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+
+[ExecuteInEditMode]
 public class MouseMoveToRotate : MonoBehaviour
 {
     public CharacterManager _characterManager;
