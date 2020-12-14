@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\CharacterAssets.cs" />
     <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
     <Compile Include="Assets\Scripts\MeshProject\RecreateObj.cs" />
+    <Compile Include="Assets\Scripts\Tools\ButtonEffection.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Files\test_codm_beatify_out\liuyifei_shape.txt" />

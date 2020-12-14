@@ -21,6 +21,14 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__e26c8cddadc93d84990ee48fd886f794__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
   - __PanelContainer__rootVisualContainer__473752c40b0dd32498337edf817cbf66__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
   - __PanelContainer__rootVisualContainer__473752c40b0dd32498337edf817cbf66__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__2a4f7d8cc0ba39145a19133acc9cfcdb__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__2a4f7d8cc0ba39145a19133acc9cfcdb__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__c7e6cada5efc33f45b6977869c9fe639__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__c7e6cada5efc33f45b6977869c9fe639__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__f7da78e83cc7cae44a098af13df9e93a__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__f7da78e83cc7cae44a098af13df9e93a__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
+  - __PanelContainer__rootVisualContainer__255c53487b2ee5b4c9e30ea179e873d5__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedViewTransform
+  - __PanelContainer__rootVisualContainer__255c53487b2ee5b4c9e30ea179e873d5__MaterialGraphView__UnityEditor.Experimental.GraphView.GraphView+PersistedSelection
   m_Values:
   - '{}'
   - '{}'
@@ -28,5 +36,13 @@ MonoBehaviour:
   - '{}'
   - '{}'
   - '{}'
-  - '{"position":{"x":831.0,"y":30.0,"z":0.0},"scale":{"x":0.3197556138038635,"y":0.3197556138038635,"z":1.0}}'
-  - '{"m_Version":0,"m_SelectedElementsArray":[]}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{}'
+  - '{"position":{"x":979.0,"y":285.0,"z":0.0},"scale":{"x":0.42010968923568728,"y":0.42010968923568728,"z":1.0}}'
+  - '{"m_Version":154,"m_SelectedElementsArray":[]}'
