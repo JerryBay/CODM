@@ -44,8 +44,8 @@ public class MouseMoveToRotate : MonoBehaviour
     private void LateUpdate()
     {
         Vector2 mouseDelta;
-        Transform cameraTr = _camera.transform;
-        _distance = _target.localPosition - _camera.transform.localPosition;
+        //Transform cameraTr = _camera.transform;
+        //_distance = _target.localPosition - _camera.transform.localPosition;
 
         if (Input.GetMouseButtonDown(_orientationControlButton))
         {
@@ -58,15 +58,11 @@ public class MouseMoveToRotate : MonoBehaviour
             _target.Rotate(0, -mouseDelta.x * _rotateSpeed * Time.deltaTime, 0);
         }
 
-        float moveDist = _distance.magnitude;
+        //float moveDist = _distance.magnitude;
 
-        float ratio = moveDist / (_maxDist - _minDist);
-
-
-        cameraTr.Translate(Input.mouseScrollDelta.y * _distance * ratio * Time.deltaTime * ScrollSensitivity);
+        //float ratio = moveDist / (_maxDist - _minDist);
+        //cameraTr.Translate(Input.mouseScrollDelta.y * _distance * ratio * Time.deltaTime * ScrollSensitivity);
 
         _preMousePos = _nowMousePos;
-
     }
 }
-

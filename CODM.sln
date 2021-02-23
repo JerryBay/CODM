@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D8C7C02C-8A8B-B31E-CFF6-35E0E551149A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.DemoTeam.DigitalHuman.ShaderLibrary", "Unity.DemoTeam.DigitalHuman.ShaderLibrary.csproj", "{AD278501-8D68-D9F2-77AB-94C20E8B137C}"

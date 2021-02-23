@@ -9358,6 +9358,7 @@ GameObject:
   - component: {fileID: 5621868703677391747}
   - component: {fileID: 5621868703677391751}
   - component: {fileID: 1583245860}
+  - component: {fileID: 5621868704103567091}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9558,6 +9559,32 @@ MonoBehaviour:
       data1: 0
       data2: 0
   defaultFrameSettings: 0
+--- !u!114 &5621868704103567091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5621868703677391744}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5e2de539c677f44bb0416a3ed5d6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchor: {fileID: 0}
+  orientationSensitivity: 0.6
+  orientationVerticalFreedom: 60
+  orientationChangeDuration: 0.02
+  pedestalFreedom: {x: 0, y: 1.8}
+  pedestalSensitivity: 0.02
+  pedestalAndDistanceChangeDuration: 0.1
+  zoomDragSensitivity: 0.1
+  zoomScrollSensitivity: 1
+  farClipPlaneTrimming: 0
+  farClipPlaneMinimum: 1
+  focusHandler: {fileID: 0}
+  focusPedestalSlack: 0.001
+  focusDistanceSlack: 0.001
 --- !u!1 &5621868703735492997
 GameObject:
   m_ObjectHideFlags: 0
@@ -9569,6 +9596,7 @@ GameObject:
   - component: {fileID: 5621868703735492996}
   - component: {fileID: 5621868703735492998}
   - component: {fileID: 5621868703735492999}
+  - component: {fileID: 1678570269}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -9616,7 +9644,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -132.99988, y: -500}
+  m_AnchoredPosition: {x: -132.99997, y: -500}
   m_SizeDelta: {x: 500, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5621868703735492998
@@ -9651,6 +9679,19 @@ MonoBehaviour:
   m_Spacing: {x: 30, y: 30}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1678570269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5621868703735492997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989ecfd1fbe8d764888c38c4a81e1a2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buttons: []
 --- !u!1 &5621868703766589779
 GameObject:
   m_ObjectHideFlags: 0
@@ -10147,8 +10188,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5621868702657659889}
   m_HandleRect: {fileID: 5621868702657659406}
   m_Direction: 0
-  m_Value: -0.000001043336
-  m_Size: 0.766
+  m_Value: 0
+  m_Size: 0.7659126
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
